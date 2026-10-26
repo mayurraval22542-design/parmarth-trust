@@ -5548,39 +5548,46 @@ body.nav-open {
   margin-top: 2px;
 }
 .qf-bank-toggle {
+  position: relative;
   width: 100%;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(220, 161, 52, 0.30);
   border-radius: 8px;
-  padding: 7px 12px;
+  padding: 8px 32px;
   font-size: 0.77rem;
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
   font-family: inherit;
   transition: all 0.2s ease;
+  text-align: center;
 }
 .qf-bank-toggle:hover {
   background: rgba(255, 255, 255, 0.14);
   border-color: rgba(220, 161, 52, 0.50);
 }
 .qf-bank-toggle span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  gap: 7px;
   color: #ffffff;
 }
 .qf-bank-toggle .qf-chevron {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 0.65rem;
   color: #f5c86e;
   transition: transform 0.25s ease;
 }
 .qf-bank-toggle .qf-chevron.open {
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
 }
 .qf-bank-body {
   display: none;
@@ -6552,7 +6559,10 @@ body.nav-open {
   }
   .qf-bank-toggle {
     font-size: 0.72rem;
-    padding: 6px 10px;
+    padding: 6px 24px;
+  }
+  .qf-bank-toggle .qf-chevron {
+    right: 10px;
   }
   .qf-bank-body .left-bank-row {
     font-size: 0.65rem;
