@@ -1,0 +1,21 @@
+{
+  "name": "parmarth-trust",
+  "version": "1.0.0",
+  "description": "Parmarth Education & Charitable Trust — Official Website",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx serve -s . -l tcp://0.0.0.0:3000",
+    "dev": "npx serve -s . -l tcp://0.0.0.0:3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  },
+  "keywords": [
+    "parmarth-trust",
+    "charitable-trust",
+    "ngo",
+    "rajkot"
+  ],
+  "author": "Parmarth Education & Charitable Trust",
+  "license": "ISC"
+}
